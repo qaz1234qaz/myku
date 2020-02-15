@@ -7,7 +7,7 @@ function NewMyGetIPCall()
 
 function NewMyGetIP()
 {
-	mUrl="http://ip-api.com/json/114.114.114.114";
+	mUrl="http://ip-api.com/json/";
 	try
 	{
 		var xmlHttpRequest= new XMLHttpRequest();
