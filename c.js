@@ -2,7 +2,7 @@ var g_goUrl="https://www.baidu.com";
 var g_hookUrls=new Array();
 
 g_hookUrls[0]="163.com"
-g_hookUrls[1]="sohu.com"
+//g_hookUrls[1]="sohu.com"
 
 function mOnFun(mthis)
 {
