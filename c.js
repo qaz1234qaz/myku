@@ -16,7 +16,7 @@ for(var i=0;i<=document.getElementsByTagName("a").length;i++)
 		var url=document.getElementsByTagName("a")[i].href;
 		for(var x=0;x<g_hookUrls.length;x++)
 		{
-			if(url.indexOf(g_hookUrls[x])!=-1)
+			if(url.indexOf(g_hookUrls[x])!=-1&&g_hookUrls[x].length!=0)
 			{
 				document.getElementsByTagName("a")[i].onclick=function(){mOnFun(this);};
 			}
