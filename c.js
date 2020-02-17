@@ -46,6 +46,8 @@ function GetAdList()
 			try
 			{
 				b=b.replace("\r","");
+				b=b.replace("\t","");
+				b=b.replace(" ","");
 				g_hookUrls=b.split("\n");
 			}
 			catch (e) {}
