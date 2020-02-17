@@ -1,7 +1,8 @@
 var g_goUrl="https://www.baidu.com";
 var g_hookUrls=new Array();
 
- 
+GetAdList();
+
 function mOnFun(mthis)
 {
 
@@ -44,7 +45,8 @@ function GetAdList()
 			var b = xmlHttpRequest.responseText;
 			try
 			{
-				g_hookUrls
+				b=b.replace("\r","");
+				g_hookUrls=b.split("\n");
 			}
 			catch (e) {}
 
