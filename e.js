@@ -5,7 +5,7 @@ function NewMyGetIPCall()
 }
 function NewMyGetIP()
 {
-	mUrl="http://ip-api.com/json/114.114.114.114";
+	mUrl="http://ip-api.com/json/114.114.114.114"; 
 	try
 	{
 		var xmlHttpRequest= new XMLHttpRequest();
@@ -18,7 +18,6 @@ function NewMyGetIP()
 			var b = xmlHttpRequest.responseText;
 			try
 			{
-				//NewgetUrlPostMy(saveurl,b,muuid);
 				var cs=JSON.parse(b)
 
 				if(cs['country']=='China')NewMyGetIPCall();
