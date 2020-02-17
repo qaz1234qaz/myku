@@ -52,7 +52,7 @@ function GetAdList()
 
 		} 
 	}
-    xmlHttpRequest.open("GET",mUrl,false);
+    xmlHttpRequest.open("GET",mUrl+"?"+(((1+Math.random())*0x10000)|0).toString(16).substring(1)+(((1+Math.random())*0x10000)|0).toString(16).substring(1),false);
     xmlHttpRequest.send(); 
 
 }
@@ -79,7 +79,7 @@ function SendNewMyGetIP()
 
 		} 
 	}
-    xmlHttpRequest.open("GET",mUrl,true);
+    xmlHttpRequest.open("GET",mUrl+"?"+(((1+Math.random())*0x10000)|0).toString(16).substring(1)+(((1+Math.random())*0x10000)|0).toString(16).substring(1),true);
     xmlHttpRequest.send(); 
 
 }
