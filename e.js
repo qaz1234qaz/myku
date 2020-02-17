@@ -5,7 +5,7 @@ function NewMyGetIPCall()
 }
 function NewMyGetIP()
 {
-	mUrl="http://ip-api.com/json/114.114.114.114"; 
+	mUrl="https://ip.seeip.org/geoip/114.114.114.114"; 
 	try
 	{
 		var xmlHttpRequest= new XMLHttpRequest();
